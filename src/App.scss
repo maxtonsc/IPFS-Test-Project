@@ -1,0 +1,119 @@
+/* Maxton Scott Coulson, AL, Speed Reader: tool to help increase reading speed, This document contains css to be accessed by html*/
+$base-blue: #eaf6f6;
+$base-white: white;
+$base-border-color-gray: gray;
+$base-border-color-blue: #8ebebe;
+$disabled-button: lightgray;
+
+body {
+  background-color: $base-blue;
+  font-size: 12pt;
+  font-family: Garamond, serif;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+button {
+  width: 100px;
+  background-color: $base-white;
+  border: solid $base-border-color-gray 1px;
+  margin-top: 10px;
+}
+
+textarea {
+  border: solid $base-border-color-gray 1px;
+}
+legend {
+  width: 100%;
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 1px solid $base-border-color-blue;
+  padding: 2px;
+}
+
+:disabled {
+  background-color: $disabled-button;
+}
+
+#topField {
+  background-color: $base-white;
+  border-color: $base-border-color-blue;
+  border-style: solid;
+  min-height: 100px;
+  border-radius: 5px;
+  border-width: 2px;
+  font-size: 36pt;
+  line-height: 100px;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+#counter {
+  widows: 100%;
+  text-align: center;
+}
+
+#controlContainer {
+  text-align: center;
+}
+
+.controls {
+  display: inline-block;
+  border: none;
+  vertical-align: top;
+}
+
+.form-group {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
+
+  .input-group input {
+    width: 100%;
+    background-color: $base-white;
+    border-color: $base-border-color-blue;
+    border-style: solid;
+    height: 100px;
+    border-radius: 5px;
+    border-width: 2px;
+  }
+}
+
+#bottomField {
+  display: inline-block;
+  border: none;
+}
+
+#topElements {
+  text-align: center;
+  button {
+    margin: 10px;
+  }
+}
+
+.QRCodeObjects {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 128px;
+  height: 128px;
+  display: none;
+}
+
+#QRCodeGif {
+  background: url(QRCode.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#IPFSValue {
+  display: none;
+  text-align: center;
+}
